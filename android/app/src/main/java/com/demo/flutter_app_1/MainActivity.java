@@ -1,4 +1,4 @@
-package com.meituan.flutter_app_1;
+package com.demo.flutter_app_1;
 
 import android.os.Bundle;
 

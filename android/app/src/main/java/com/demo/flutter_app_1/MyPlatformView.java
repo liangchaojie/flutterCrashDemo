@@ -1,10 +1,8 @@
-package com.meituan.flutter_app_1;
+package com.demo.flutter_app_1;
 
 import android.content.Context;
 import android.util.Log;
 import android.view.View;
-
-import com.meituan.flutter_app_1.GestureDemoView;
 
 import java.util.Map;
 

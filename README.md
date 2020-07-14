@@ -1,6 +1,7 @@
 # FlutterCrashDemo
 This is a demo for revealing flutter bug.
 [TOC]
+## [Latest link](http://note.youdao.com/s/3xniXDek)
 ## 1 Problem Description
 
 > When I use PlatformView with GestureDetector and swipe it quickly with multiple fingers in flutter app, the program crashes.

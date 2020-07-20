@@ -17,6 +17,10 @@ import android.view.View;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
+import java.lang.reflect.Field;
+import java.math.BigDecimal;
+
+import static android.view.MotionEvent.TOOL_TYPE_UNKNOWN;
 
 /**
  * 混合手势测试
@@ -191,14 +195,20 @@ public class GestureDemoView extends View {
     }
 
     @Override
+    public boolean dispatchTouchEvent(MotionEvent event) {
+
+        return super.dispatchTouchEvent(event);
+    }
+
+
+    @Override
     public boolean onTouchEvent(MotionEvent event) {
-        Log.i("TAG", "event liangchaojie viewController.sendMotionEvent android: ");
+        Log.i("TGA", "onTouchEvent: "+event);
         mGestureDetector.onTouchEvent(event);
         mScaleGestureDetector.onTouchEvent(event);
         if (event.getActionMasked() == MotionEvent.ACTION_UP) {
             fixTranslate();
         }
-
         return true;
     }
 
